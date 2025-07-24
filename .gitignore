@@ -1,4 +1,9 @@
-# 🚨 보안 - API 키 및 민감한 정보
+# AI민진 전용 파일들 (Cursor AI와 분리)
+AI_Minjin_To_Do.md
+AI_Minjin_To_Do.lock
+ai_minjin_context.json
+
+# 기존 API 키 및 환경 설정
 .env
 .env.local
 .env.production

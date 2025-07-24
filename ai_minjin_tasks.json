@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "created": "2025-07-25T06:14:51.027461",
+    "version": "1.0",
+    "description": "AI민진 전용 작업 관리 시스템 (Cursor AI와 분리)"
+  },
+  "current_tasks": {
+    "in_progress": [],
+    "pending": [],
+    "completed": []
+  },
+  "conversation_context": {
+    "last_session": "",
+    "important_topics": [],
+    "user_preferences": {
+      "name": "민진쌤",
+      "birthday": "10월 19일",
+      "environment": "노트북 → 데스크탑 전환 예정"
+    }
+  },
+  "memory_stats": {
+    "total_conversations": 0,
+    "oldest_memory_days": 0,
+    "last_update": "2025-07-25T06:14:51.027461"
+  }
+}
