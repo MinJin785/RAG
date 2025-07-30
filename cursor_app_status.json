@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "created": "2025-07-30",
+    "purpose": "데스크탑 Cursor 앱 ↔ 웹 Cursor 소통 브릿지",
+    "version": "1.0"
+  },
+  "app_status": {
+    "last_update": "",
+    "current_task": "",
+    "completed_tasks": [],
+    "issues_encountered": [],
+    "next_help_needed": ""
+  },
+  "work_log": {
+    "session_start": "",
+    "actions_taken": [],
+    "files_modified": [],
+    "packages_installed": [],
+    "errors": []
+  },
+  "communication": {
+    "to_web_cursor": {
+      "message": "",
+      "priority": "normal",
+      "timestamp": ""
+    },
+    "from_web_cursor": {
+      "latest_analysis": "",
+      "recommendations": [],
+      "timestamp": ""
+    }
+  },
+  "project_state": {
+    "chainlit_installed": false,
+    "perplexity_integrated": false,
+    "image_upload_ready": false,
+    "current_bugs": []
+  }
+}
