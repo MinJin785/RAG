@@ -1,14 +1,32 @@
-# Welcome to Chainlit! 🚀🤖
+# AI민진 - 개인화된 AI 채팅 시스템 🤖✨
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+안녕하세요! 민진쌤을 위한 특별한 AI 시스템, **AI민진**입니다! 📚
 
-## Useful Links 🔗
+## 🎯 주요 기능
 
-- **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/k73SQ3FyUh) to ask questions, share your projects, and connect with other developers! 💬
+### 📝 문법 문제 생성기 (NEW!)
+- **`문법 문제`** - 랜덤 문법 문제 생성
+- **`문법 퀴즈`** - 5개 문제 세트 생성  
+- **`문법 초급/중급/고급`** - 난이도별 문제
+- **`문법 조사`** - 조사 관련 문제
+- **`문법 어미`** - 어미 활용 문제
+- **`문법 맞춤법`** - 맞춤법 교정 문제
+- **`문법 띄어쓰기`** - 띄어쓰기 문제
+- **`문법 도움말`** - 전체 사용법 안내
 
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
+### 🧠 스마트 메모리 시스템
+- **`메모리 검색 [검색어]`** - 1년치 기억 검색
+- 자동 대화 저장 및 학습
+- 중요도별 메모리 관리
 
-## Welcome screen
+### 🔧 시스템 관리
+- **`TODO 상태`** - 작업 현황 확인
+- **`git 동기화`** - GitHub 자동 동기화
+- **`git 도움말`** - Git 사용법 안내
 
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+## 💡 사용 팁
+1. 문법 문제는 다양한 유형으로 무제한 생성 가능
+2. 모든 대화는 자동으로 기억되어 학습에 활용
+3. 명령어는 간단히 한글로 입력하세요
+
+시작해보세요! 😊

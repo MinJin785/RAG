@@ -15,6 +15,7 @@ from core.memory_brain import MemoryBrain
 from core.search_engine import SearchEngine
 from core.self_modifier import SelfModifier
 from core.git_automation import GitAutomation, CursorGitGuide
+from core.grammar_generator import GrammarGenerator
 
 load_dotenv()
 
@@ -202,6 +203,7 @@ class AIMinjin:
         self.memory_brain = MemoryBrain(max_size_gb=memory_limit_gb)  # 용량 제한 적용
         self.search_engine = SearchEngine()
         self.self_modifier = SelfModifier()
+        self.grammar_generator = GrammarGenerator()  # 문법 문제 생성기 추가
         
         # 대화 저장 설정
         self.auto_save_conversations = True
@@ -473,6 +475,9 @@ async def main(message: cl.Message):
     elif message.content.startswith("메모리 검색"):
         await handle_memory_search_animated(message.content)  # 애니메이션 효과 적용
         return
+    elif message.content.startswith("문법") or message.content.startswith("grammar"):
+        await handle_grammar_command_animated(message.content)  # 문법 문제 처리
+        return
     
     # 타이핑 효과가 있는 로딩 메시지
     loading_msg = cl.Message(content="")
@@ -553,6 +558,24 @@ async def handle_memory_search_animated(command: str):
     
     # 실제 메모리 검색 처리
     await handle_memory_search(command)
+
+async def handle_grammar_command_animated(command: str):
+    """애니메이션 효과가 있는 문법 문제 처리"""
+    grammar_msg = cl.Message(content="📝 문법 문제 생성 시작...")
+    await grammar_msg.send()
+    
+    grammar_steps = [
+        "📚 문법 데이터베이스 로딩 중...",
+        "🎯 문제 유형 선택 중...",
+        "✍️ 문법 문제 생성 중...",
+        "🎨 문제 포맷팅 중...",
+        "✅ 문제 완성!"
+    ]
+    
+    await show_progress_animation(grammar_msg, grammar_steps, 0.8)
+    
+    # 실제 문법 문제 처리
+    await handle_grammar_command(command)
 
 async def test_visual_effects():
     """시각적 효과 테스트 함수"""
@@ -1122,6 +1145,139 @@ async def auto_detect_and_save_ai_minjin_tasks(user_message: str, ai_response: s
             }
         }
         await ai_minjin.self_modifier.update_ai_minjin_todo(task_data)
+
+async def handle_memory_search(command: str):
+    """메모리 검색 명령어 처리"""
+    try:
+        # 검색어 추출
+        search_query = command.replace("메모리 검색", "").strip()
+        if not search_query:
+            await cl.Message(content="🔍 **메모리 검색**\n\n사용법: 메모리 검색 [검색어]\n예시: 메모리 검색 생일").send()
+            return
+        
+        # 메모리 검색 실행
+        memories = await ai_minjin.memory_brain.search_memories(search_query, top_k=10)
+        
+        if not memories:
+            await cl.Message(content=f"❌ '{search_query}'에 대한 기억을 찾을 수 없습니다.").send()
+            return
+        
+        # 검색 결과 포맷팅
+        result_content = f"🧠 **메모리 검색 결과: '{search_query}'**\n\n"
+        for i, memory in enumerate(memories, 1):
+            content = memory['content'][:150] + "..." if len(memory['content']) > 150 else memory['content']
+            result_content += f"**{i}.** {content}\n"
+            if 'metadata' in memory and 'timestamp' in memory['metadata']:
+                result_content += f"   *시간: {memory['metadata']['timestamp'][:10]}*\n\n"
+        
+        await cl.Message(content=result_content).send()
+        
+    except Exception as e:
+        await cl.Message(content=f"❌ 메모리 검색 중 오류가 발생했습니다: {e}").send()
+
+async def handle_grammar_command(command: str):
+    """문법 문제 명령어 처리"""
+    try:
+        command_lower = command.lower()
+        
+        # 명령어 분석
+        if "도움말" in command or "help" in command:
+            help_content = """📝 **문법 문제 생성기 도움말**
+
+**사용 가능한 명령어:**
+• `문법 문제` - 랜덤 문법 문제 1개 생성
+• `문법 퀴즈` - 문법 문제 5개 세트 생성
+• `문법 초급` - 초급 수준 문법 문제
+• `문법 중급` - 중급 수준 문법 문제  
+• `문법 고급` - 고급 수준 문법 문제
+• `문법 조사` - 조사 관련 문제
+• `문법 어미` - 어미 활용 문제
+• `문법 맞춤법` - 맞춤법 교정 문제
+• `문법 띄어쓰기` - 띄어쓰기 문제
+• `문법 통계` - 문법 생성기 정보
+
+**문제 유형:**
+📚 객관식, 단답형, 서술형, 교정, 배열, 띄어쓰기, 맞춤법"""
+            
+            await cl.Message(content=help_content).send()
+            return
+        
+        elif "통계" in command or "정보" in command:
+            stats = ai_minjin.grammar_generator.get_statistics()
+            stats_content = f"""📊 **문법 생성기 통계**
+
+**문제 유형:** {stats['총_문제_유형']}개
+**난이도 수준:** {', '.join(stats['난이도_수준'])}
+**문법 항목:** {', '.join(stats['문법_항목'])}
+**생성 가능 문제수:** {stats['생성_가능_문제수']}
+**지원 언어:** {stats['지원_언어']}
+**마지막 업데이트:** {stats['마지막_업데이트']}
+
+**사용 가능한 문제 유형:**
+{chr(10).join(f"• {qtype}" for qtype in stats['문제_유형_목록'])}"""
+            
+            await cl.Message(content=stats_content).send()
+            return
+        
+        # 문제 생성 설정
+        difficulty = "중급"  # 기본값
+        question_type = None
+        count = 1
+        
+        if "초급" in command:
+            difficulty = "초급"
+        elif "고급" in command:
+            difficulty = "고급"
+        
+        if "퀴즈" in command:
+            count = 5
+        elif "조사" in command:
+            question_type = "조사_완성"
+        elif "어미" in command:
+            question_type = "어미_활용"
+        elif "맞춤법" in command:
+            question_type = "맞춤법_교정"
+        elif "띄어쓰기" in command:
+            question_type = "띄어쓰기"
+        elif "문장" in command:
+            question_type = "문장_교정"
+        elif "어순" in command:
+            question_type = "어순_배열"
+        
+        # 문제 생성
+        if count == 1:
+            question = ai_minjin.grammar_generator.generate_question(question_type, difficulty)
+            content = format_grammar_question(question, 1)
+        else:
+            questions = ai_minjin.grammar_generator.generate_quiz_set(count, difficulty)
+            content = "📝 **문법 퀴즈 세트**\n\n"
+            for i, question in enumerate(questions, 1):
+                content += format_grammar_question(question, i)
+                if i < len(questions):
+                    content += "\n" + "="*50 + "\n\n"
+        
+        await cl.Message(content=content).send()
+        
+    except Exception as e:
+        logger.error(f"문법 명령어 처리 오류: {e}")
+        await cl.Message(content=f"❌ 문법 문제 생성 중 오류가 발생했습니다: {e}").send()
+
+def format_grammar_question(question: Dict, number: int) -> str:
+    """문법 문제를 포맷팅"""
+    content = f"**문제 {number}번** ({question.get('category', '일반')}, {question.get('difficulty', '중급')})\n\n"
+    content += f"❓ {question['question']}\n\n"
+    
+    if question['type'] == '객관식' and 'choices' in question:
+        for i, choice in enumerate(question['choices'], 1):
+            content += f"{i}) {choice}\n"
+        content += "\n"
+    
+    # 정답과 설명을 스포일러로 처리
+    content += "**정답 및 설명** (클릭하여 확인)\n"
+    content += f"||**정답:** {question['correct_answer']}||\n"
+    content += f"||**설명:** {question['explanation']}||\n"
+    
+    return content
 
 if __name__ == "__main__":
     import chainlit.cli
