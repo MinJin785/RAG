@@ -1,0 +1,5 @@
+Cursor영어작성규칙각인수정완료 | 2025-08-02 19:36:04
+
+👤 Cursor IDE 내용들을 영어로 적으라고 지적하고 각인시켜서 바로 수정하라고 요구
+
+🤖 Cursor IDE 관련 내용을 한글에서 영어로 수정 완료. All Cursor IDE related content MUST be written in English only 규칙 각인. 메모리 업데이트 완료
