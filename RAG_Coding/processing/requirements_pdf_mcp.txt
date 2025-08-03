@@ -1,0 +1,28 @@
+# PDF 전처리 MCP 서버 의존성
+
+# 기본 웹 서버
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+
+# LangChain 및 Upstage 통합
+langchain>=0.1.0
+langchain-upstage>=0.1.0
+
+# PDF 처리
+PyMuPDF>=1.23.0
+Pillow>=10.0.0
+
+# 유틸리티
+python-multipart>=0.0.6
+python-dotenv>=1.0.0
+
+# 로깅 및 모니터링
+structlog>=23.2.0
+
+# 데이터 처리
+pandas>=2.1.0
+numpy>=1.24.0
+
+# 비동기 처리
+aiofiles>=23.2.0
+asyncio-throttle>=1.0.2

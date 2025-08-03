@@ -1,0 +1,48 @@
+# Ultimate PDF OCR System - Complete Requirements
+# 웹 검색으로 연구한 최신 PDF OCR 처리 라이브러리들
+
+# Core PDF Processing
+PyMuPDF>=1.23.0               # PDF to image conversion, high performance
+PyMuPDF4LLM>=0.0.5           # LLM-optimized PDF processing
+pdf2image>=1.17.0            # Alternative PDF to image converter
+
+# Image Processing and Computer Vision  
+opencv-python>=4.8.0         # Advanced image preprocessing
+Pillow>=10.0.0               # Image manipulation
+numpy>=1.24.0                # Numerical operations
+scikit-image>=0.21.0         # Scientific image processing
+
+# OCR Engines
+pytesseract>=0.3.10          # Traditional OCR engine
+easyocr>=1.7.0               # Modern neural OCR
+paddleocr>=2.7.0             # Alternative OCR engine
+
+# AI API Clients
+anthropic>=0.7.0             # Claude API client (실제 API 사용)
+google-generativeai>=0.3.0  # Gemini API client (실제 API 사용)
+openai>=1.0.0                # OpenAI API backup
+requests>=2.31.0             # HTTP requests for API calls
+
+# Text Processing and NLP
+python-docx>=0.8.11          # Document processing
+markdown>=3.5.0              # Markdown conversion
+beautifulsoup4>=4.12.0       # HTML/XML parsing
+lxml>=4.9.0                  # XML processing
+
+# Performance and Utilities
+tqdm>=4.66.0                 # Progress bars
+psutil>=5.9.0                # System monitoring
+python-dotenv>=1.0.0         # Environment variable management
+pathlib>=1.0.1               # Path handling
+
+# Optional High-Performance Additions
+torch>=2.0.0                 # Deep learning models
+torchvision>=0.15.0          # Computer vision models
+transformers>=4.30.0         # Transformer models for post-processing
+sentence-transformers>=2.2.0 # Semantic text processing
+
+# Development and Testing
+pytest>=7.4.0               # Testing framework
+black>=23.0.0                # Code formatting
+flake8>=6.0.0                # Linting
+mypy>=1.5.0                  # Type checking

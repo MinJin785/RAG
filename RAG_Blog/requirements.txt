@@ -1,8 +1,0 @@
-# Perplexity API 사용을 위한 필수 패키지
-requests==2.31.0
-python-dotenv==1.0.0
-
-# 추가 유용한 패키지들
-beautifulsoup4==4.12.2  # HTML 파싱용
-markdown==3.5.1         # 마크다운 처리용
-Pillow==10.0.1          # 이미지 처리용 (선택사항)
