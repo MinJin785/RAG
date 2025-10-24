@@ -100,6 +100,7 @@ private.*
 # OCR 시험 시스템 생성 파일
 ocr_exam/data/exams/*.pdf
 ocr_exam/data/exams/*.json
+ocr_exam/data/exams/images/
 ocr_exam/data/answers/*.json
 ocr_exam/data/scanned/
 ocr_exam/data/results/
