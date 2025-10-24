@@ -95,4 +95,14 @@ ENV/
 # 민감한 설정 파일
 config.local.*
 secrets.*
-private.* 
+private.*
+
+# OCR 시험 시스템 생성 파일
+ocr_exam/data/exams/*.pdf
+ocr_exam/data/exams/*.json
+ocr_exam/data/answers/*.json
+ocr_exam/data/scanned/
+ocr_exam/data/results/
+ocr_exam/data/students.db
+# 단어 DB는 유지
+!ocr_exam/data/word_database/ 

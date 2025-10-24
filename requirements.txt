@@ -24,3 +24,14 @@ tiktoken==0.7.0
 huggingface-hub==0.24.6
 torch>=2.0.0
 transformers>=4.41.0
+
+# OCR 시험 채점 시스템
+opencv-python==4.8.1.78
+pytesseract==0.3.10
+reportlab==4.0.7
+qrcode[pil]==7.4.2
+Pillow==10.1.0
+pandas==2.1.3
+openpyxl==3.1.2
+coolsms-python==2.1.0
+pyzbar==0.1.9
