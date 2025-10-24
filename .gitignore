@@ -35,10 +35,10 @@ share/python-wheels/
 MANIFEST
 
 # AI/ML 데이터 및 모델
-data/
-data/memory_db/
-data/backups/
-data/self_updates/
+/data/
+/data/memory_db/
+/data/backups/
+/data/self_updates/
 *.bin
 *.pkl
 *.faiss

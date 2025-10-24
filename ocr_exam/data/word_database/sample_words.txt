@@ -1,0 +1,239 @@
+01 accelerate
+[ək|seləreɪt]
+
+v
+ 가속화되다, 속도를 높이다
+syn   speed up  /  move faster  /  hasten  /  quicken  /  expedite
+           속도를 높이다      더 빠르게 움직이다        재촉하다          빨라지다      더 신속히 처리하다
+
+02 acquire
+[ə|kwaɪə(r)]
+
+v
+ 습득하다, 얻다
+syn   earn   /   gain   /   get   /   receive   /   win
+            얻다             얻다          얻다      받다, 받아들이다       얻다
+
+03 advance
+[əd|vӕns]
+
+n
+전진, 발전
+syn   boost  /  development  /  growth  /  improvement  /  progress
+             증대                  발전                      성장                  향상, 개선                진전, 진척
+
+04 allow
+[ə|laʊ]
+
+v
+ 허락하다, 허용하다
+syn   admit   /   authorize   /   permit   /   let    /   grant
+           허락하다        권한을 부여하다          허락하다        허락하다       승인하다
+
+05 bond
+[bɑ:nd]
+
+n
+유대, 끈
+syn   connection  /  link  /  tie  /  relation  /  relationship
+            연결, 연관성          관련성       유대      관계, 관련성          관계, 관련성
+
+06 cheer
+[tʃɪə(r)]
+
+n
+환호, 응원가
+syn   applause  /  supportive yell  /  heartening  /  acclamations  /  ovation
+          박수, 박수갈채            지지하는  외침                격려하는 것                환호, 갈채             (열렬한) 박수
+
+07 confidence
+[|kɑ:nfɪdəns]
+
+n
+자신감
+syn    self-assurance  /  belief in oneself  /  self-reliance  /  assurance  /  conviction
+              자신, 자기 과신             자신에 대한 믿음(확신)             자기 신뢰                확언, 장담         확신, 신념
+
+08 delight
+[dɪ|laɪt]
+
+n
+ 기쁨, 즐거움
+syn   enjoyment  /  happiness  /   joy   /  pleasure  /  satisfaction
+             즐거움, 기쁨                 행복             즐거움         기쁨, 즐거움               만족
+
+09 eligible
+    [ˈelɪdʒəbl]
+
+a
+ 적격의, 적임의
+syn   fit  / suitable / appropriate / qualified / competent
+         적합한      적절한                 적절한             자격이 있는          유능한
+
+10 emphasize
+[ˈemfəsaɪz]
+
+v
+ 강조하다
+syn   highlight  /  stress  / underline  /  accentuate  /  spotlight
+             강조하다           강조하다          강조하다                  강조하다           강조하다
+
+11 enhance
+[ɪnˈhɑːns]
+
+v
+ 높이다, 향상시키다
+syn   improve  /  upgrade  /  reinforce  /  intensify /  boost
+        개선하다, 나아지다      개선하다             강화하다            강화하다               증진시키다
+
+12 expect
+[ɪkˈspekt]
+
+v
+ 예상하다
+syn   anticipate  /  estimate  /  suppose  /  forecast  /  foresee
+             예상하다              추측하다           추측하다            예상하다         예견하다
+
+13 fair
+[feə(r)]
+
+a
+ 공정한, 공평한
+syn   unbiased  /  impartial  /  equitable  /  even-handed  /  objective
+           선입견 없는              공정한            공정한, 공평한              공명정대한              객관적인
+
+14 foundation
+[faʊnˈdeɪʃ(ə)n]
+
+n
+ 토대, 기초
+syn   base   /  basis   /  root   /  groundwork  /  cornerstone
+         기초, 토대     기반, 기초    기원, 뿌리            기초작업                       초석, 주춧돌
+
+15 gratify
+[ˈɡratɪfʌɪ]
+
+v
+ 기쁘게 하다, 만족시키다
+syn   give pleasure  /  satisfy  /  gladden  /  please  /  delight
+                기쁘게 하다            만족시키다        기쁘게 하다      기쁘게하다       기쁘게하다
+
+16 heartfelt
+[ˈhɑːtfɛlt]
+
+a
+ 진심에서 우러난, 정성어린
+syn   genuine  /  sincere  /  earnest  /  honest  /  authentic
+        진실한, 진심어린       진정한      진심어린, 성실한       정직한          진짜의
+
+17 income
+[ˈɪnkʌm]
+
+n
+ 수입, 소득
+syn     earnings  /  revenue  /  profit  /  wages   / salary
+               소득, 수입           수입, 수익        이익, 수익      임금, 급료         급여
+
+18 legendary
+     [ˈledʒənderi]
+
+a
+ 전설적인
+syn   mythical  / mythological / fabulous /   storied  /  fabled
+        신화 속에 나오는             신화의             우화에 나오는    옛날이야기에 나오는   전설적인
+
+19 loyal
+[ˈlɔɪəl]
+
+a
+ 충성스러운, 충실한
+syn   faithful  /  devoted  /  true to  /  dutiful  /  steadfast
+         충실한, 충직한        헌신적인       ...에 충실한          충실한            확고한
+
+20 mercy
+[ˈməːsi]
+
+n
+ 자비, 연민
+syn   generosity  /  compassion  /  good-will  /  pity  /  leniency
+               너그러움               연민, 동정심              호의, 친절        연민, 동정     너그러움, 자비
+
+21 novelty
+[ˈnɑːvlti]
+
+n
+ 새로움, 참신함
+syn  newness / freshness / uniqueness / originality / innovation
+             새로움               새로움                 진귀함                 참신                혁신
+
+22 patience
+[ˈpeɪʃ(ə)ns]
+
+n
+ 인내, 참음
+syn   endurance  /  perseverance  /  bearing  /  tolerance  /  fortitude
+           인내, 참을성                     인내                      인내              인내, 관용      불굴의 정신
+
+23 precious
+[ˈprɛʃəs]
+
+a
+ 귀중한, 값비싼
+syn   valuable  /  invaluable  /  priceless  /  beloved  /  cherished
+          소중한, 값비싼            귀중한             대단히 귀중한          소중한               소중한, 귀중한
+
+24 possible
+[ˈpɑːsəbl]
+
+a
+ 가능한, 있음직한
+syn   likely  / probable / presumable / feasible / achievable
+           있음직한       있을 것 같은           있음직한             가능한            달성 가능한
+
+25 properly
+[ˈprɒp(ə)li]
+
+a
+ 제대로, 적절히
+syn   correctly  /  accurately  /  rightly  /  suitably  /  appropriately
+         바르게, 정확하게    정확히, 정밀하게         당연히      적합하게, 적절하게           적절하게
+
+26 richness
+[ˈrɪtʃnəs]
+
+n
+ 풍부함, 풍성함
+syn   copiousness  /  abundance  /  affluence  /  bounty  /  ampleness
+           풍성함, 풍부함                  풍부                   풍족, 부       너그러움, 풍부함         풍부함
+
+27 sufficient
+[səˈfɪʃ(ə)nt]
+
+a
+ 충분한, 족한
+syn   ample  /  plentiful  /  copious  /  plenty of  /  adequate
+             충분한            풍부한          엄청난, 방대한           많은                    충분한
+
+28 terrific
+[təˈrɪfɪk]
+
+a
+ 멋진, 훌륭한
+syn   wonderful  /  amazing  /  excellent  /  fantastic  /  brilliant
+                훌륭한                  놀라운               훌륭한              환상적인          훌륭한, 멋진
+
+29 worship
+[ˈwəːʃɪp]
+
+n
+ 숭배, 예배
+syn   glorification  /  respect /  reverence  /  adoration  /  admiration
+               찬미, 찬양              존경, 경의             숭배                흠모, 경배                  존경
+
+30 achieve
+[əˈtʃiːv]
+
+v
+ 성취하다, 이루다
+syn   accomplish  /  attain  /  reach  /  realize  /  complete
+               달성하다              획득하다      도달하다         실현하다               완수하다
